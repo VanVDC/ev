@@ -1,0 +1,66 @@
+button:focus {
+  outline: none;
+}
+
+/* button:focus-visible {
+  outline: 2px solid #443ffc;
+  outline-offset: 3px;
+} */
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  background: rgba(253, 253, 253, 0.1);
+  border: none;
+  padding: 0.5rem 3rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .button-header{
+  background: none;
+  font-family: obvia, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  padding: 1.5rem 3rem;
+} */
+
+.button span {
+  display: inline-block;
+  position: relative;
+  /* color: #fff; */
+}
+
+.button::before {
+  content: '';
+  background: rgba(236, 238, 236, 0.1);
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+}
+
+.button:hover::before {
+  transform: scale3d(0.9, 0.8, 1);
+}
+
+.button::after {
+  content: '';
+  border: 1px solid white;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.7, 1);
+  border-radius: 0px;
+  transform: scale3d(0.85, 0.65, 1);
+}
+
+.button:hover::after {
+  transform: scale3d(1, 1, 1);
+}

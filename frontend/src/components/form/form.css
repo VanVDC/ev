@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* body {
+  background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+  font-size: 12px;
+} */
+
+.form-container {
+  /* flex: 0 1 700px; */
+  margin: auto;
+  padding: 5em;
+}
+
+.form-screen {
+  position: relative;
+  background: white;
+  border-radius: 0.9rem;
+}
+
+.form-screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1.2rem;
+  right: 1.2rem;
+  bottom: 0;
+  border-radius: 1rem;
+  box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.form-screen-header {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background: black;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.form-screen-body {
+  display: flex;
+}
+
+.form-screen-body-item {
+  flex: 1;
+  padding: 4rem;
+}
+
+.form-screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: black;
+  font-size: 1.5em;
+}
+
+.app-contact {
+  margin-top: 3em;
+  margin-left: 2em;
+  font-size: 0.5em;
+  color: black;
+}
+
+.app-form-group {
+  margin-bottom: 1rem;
+}
+
+.app-form-group.message {
+  margin-top: 4rem;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 0.8rem 0;
+  background: none;
+  border: none;
+  border-bottom: 0.1rem solid #666;
+  color: black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: black;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 100vw;
+  }
+  .form-screen {
+    width: 100%;
+  }
+  .form-screen-body {
+    flex-direction: column;
+  }
+  .form-screen-body-item {
+    padding: 1rem;
+  }
+
+  .form-screen-body-item.left {
+    margin-bottom: 0.5em;
+  }
+
+  .app-title span {
+    margin-right: 1em 1em;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}

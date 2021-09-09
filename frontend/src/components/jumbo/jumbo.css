@@ -1,0 +1,133 @@
+/* Jumbotron */
+.jumbo-container {
+  overflow: hidden;
+  width: 100%;
+  height: 89vh;
+}
+.jumbo-bg {
+  display: flex;
+  font-family: 'Noto Serof TC', sans-serif;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.myVideo {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  object-fit: fill;
+  width: 100%;
+  /* height: 111%; */
+  height: 100%;
+  z-index: 1;
+}
+
+.jumbo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  height: auto;
+  padding-top: 20em;
+  padding-bottom: 32em;
+}
+
+.line {
+  display: block;
+  width: 7rem;
+  height: 0.4rem;
+  border-top: 0.06rem solid #ffffff;
+  border-bottom: 0.06rem solid #ffffff;
+  opacity: 0.5;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.enter-shop {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  margin-right: 0;
+  color: white;
+  letter-spacing: 0.09rem;
+}
+
+/* a.enter-shop.link-enter {
+  font-size: 1.2rem;
+  color: white;
+} */
+
+/* .enter-shop::before,
+.enter-shop::after {
+  position: absolute;
+  width: 100%;
+  height: 0.06rem;
+  top: 100%;
+  left: 0;
+  background: white;
+  pointer-events: none;
+
+  color: white;
+} */
+/* .enter-shop::before {
+  content: '';
+
+  color: white;
+} */
+
+.link-enter {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .link-enter::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+} */
+
+/* .link-enter:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+} */
+/* title reveal */
+.jumbo-h1,
+.line {
+  animation-duration: 4s;
+}
+
+.jumbo-h1,
+.line {
+  display: inline-block;
+  animation-name: text;
+}
+
+@keyframes text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* end title reveal */
+
+.jumbo-h1 {
+  font-size: 5vw;
+}
+.jumbo-h4 {
+  font-size: 1.6vw;
+}
+
+.jumbo-h1,
+.jumbo-h4 {
+  text-shadow: 0 2px 8px rgba(54, 9, 9, 0.4);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.034rem;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}

@@ -1,0 +1,17 @@
+.review-video-container {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review-video {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.review-video h2 {
+  color: black;
+}

@@ -1,0 +1,44 @@
+.info-container {
+  box-sizing: border-box;
+  background-color: black;
+  width: 100%;
+}
+
+.info-section {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  margin: 3em 0;
+  border: solid 0.06rem lightgray;
+}
+
+.info-img {
+  background-color: #f2f2f2;
+  width: 50%;
+  height: 35em;
+}
+
+.info-img img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.info-text {
+  background-color: #f2f2f2;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5em 0 5em;
+  opacity: 0.9;
+}
+.info-text-heading {
+  font-size: 3em;
+}
+.info-text,
+.info-text-heading {
+  color: black;
+}

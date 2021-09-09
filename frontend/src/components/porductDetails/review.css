@@ -1,0 +1,32 @@
+.review-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  width: 80vw;
+  background-color: white;
+  border: solid white 0.06rem;
+  text-transform: capitalize;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+.review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 80%;
+  padding: 1em 2em;
+}
+
+.review-list {
+  border: black solid 0.031rem;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+#comment {
+  margin-bottom: 1rem;
+}
