@@ -13,13 +13,13 @@ const videoSource3 =
 
 const Jumbo = () => {
   const screenWidth = window.innerWidth;
-  const videoSize = (screenWidth) => {
-    if (screenWidth <= 350) {
-      return videoSource3;
-    }
-    return videoSource5;
-  };
-  const videoSource = videoSize();
+  let videoSource = null;
+  if (screenWidth <= 350) {
+    videoSource = videoSource3;
+  } else {
+    videoSource = videoSource5;
+  }
+
   console.log(videoSource);
 
   return (
