@@ -2,10 +2,26 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import './jumbo.css';
 
-const videoSource =
-  'https://ia601402.us.archive.org/35/items/bgvideo_20210608_0132/bgvideo.mp4';
+// const videoSource =
+//   'https://ia601402.us.archive.org/35/items/bgvideo_20210608_0132/bgvideo.mp4';
+// 5mb
+const videoSource5 =
+  'https://ia601507.us.archive.org/31/items/bgvideo5/bgvideo5.mp4';
+//3.7mb
+const videoSource3 =
+  'https://ia601408.us.archive.org/27/items/bgvideo3.7/bgvideo3.7.mp4';
 
 const Jumbo = () => {
+  const screenWidth = window.innerWidth;
+  const videoSize = (screenWidth) => {
+    if (screenWidth <= 350) {
+      return videoSource3;
+    }
+    return videoSource5;
+  };
+  const videoSource = videoSize();
+  console.log(videoSource);
+
   return (
     <div className='jumbo-container'>
       <div className='jumbo-bg'>
