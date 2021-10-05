@@ -20,8 +20,6 @@ const Jumbo = () => {
     videoSource = videoSource5;
   }
 
-  console.log(videoSource);
-
   return (
     <div className='jumbo-container'>
       <div className='jumbo-bg'>
