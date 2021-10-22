@@ -1,40 +1,40 @@
-import React, { useEffect } from 'react'
-import { LinkContainer } from 'react-router-bootstrap'
-import { Table, Button } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import { listUsers, deleteUser } from '../actions/userActions'
+import React, { useEffect } from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Table, Button } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import Message from '../components/Message';
+import Loader from '../components/Loader';
+import { listUsers, deleteUser } from '../actions/userActions';
 
 const UserListScreen = ({ history }) => {
-  const dispatch = useDispatch()
-  const userList = useSelector((state) => state.userList)
-  const { loading, error, users } = userList
+  const dispatch = useDispatch();
+  const userList = useSelector((state) => state.userList);
+  const { loading, error, users } = userList;
 
-  const userLogin = useSelector((state) => state.userLogin)
-  const { userInfo } = userLogin
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
-  const userDelete = useSelector((state) => state.userDelete)
-  const { success: successDelete } = userDelete
+  const userDelete = useSelector((state) => state.userDelete);
+  const { success: successDelete } = userDelete;
 
   useEffect(() => {
     if (userInfo && userInfo.isAdmin) {
-      dispatch(listUsers())
+      dispatch(listUsers());
     } else {
-      history.push('/login')
+      history.push('/login');
     }
 
-    dispatch(listUsers())
-  }, [dispatch, history, successDelete, userInfo])
+    dispatch(listUsers());
+  }, [dispatch, history, successDelete, userInfo]);
 
   const deleteHandler = (id) => {
     if (window.confirm('Are you sure?')) {
-      dispatch(deleteUser(id))
+      dispatch(deleteUser(id));
     }
-  }
+  };
   return (
     <>
-      <h1>Users</h1>
+      <h1 style={{ color: 'grey' }}>Users</h1>
       {loading ? (
         <Loader />
       ) : error ? (
@@ -89,7 +89,7 @@ const UserListScreen = ({ history }) => {
         </Table>
       )}
     </>
-  )
-}
+  );
+};
 
-export default UserListScreen
+export default UserListScreen;

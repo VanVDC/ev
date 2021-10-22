@@ -1,30 +1,30 @@
-import React, { useEffect } from 'react'
-import { LinkContainer } from 'react-router-bootstrap'
-import { Table, Button } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import { listOrders } from '../actions/orderActions'
+import React, { useEffect } from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+import { Table, Button } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import Message from '../components/Message';
+import Loader from '../components/Loader';
+import { listOrders } from '../actions/orderActions';
 
 const OrderListScreen = ({ history }) => {
-  const dispatch = useDispatch()
-  const orderList = useSelector((state) => state.orderList)
-  const { loading, error, orders } = orderList
+  const dispatch = useDispatch();
+  const orderList = useSelector((state) => state.orderList);
+  const { loading, error, orders } = orderList;
 
-  const userLogin = useSelector((state) => state.userLogin)
-  const { userInfo } = userLogin
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   useEffect(() => {
     if (userInfo && userInfo.isAdmin) {
-      dispatch(listOrders())
+      dispatch(listOrders());
     } else {
-      history.push('/login')
+      history.push('/login');
     }
-  }, [dispatch, history, userInfo])
+  }, [dispatch, history, userInfo]);
 
   return (
     <>
-      <h1>Orders</h1>
+      <h1 style={{ color: 'grey' }}>Orders</h1>
       {loading ? (
         <Loader />
       ) : error ? (
@@ -77,7 +77,7 @@ const OrderListScreen = ({ history }) => {
         </Table>
       )}
     </>
-  )
-}
+  );
+};
 
-export default OrderListScreen
+export default OrderListScreen;
