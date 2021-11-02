@@ -60,12 +60,12 @@ const ProductEditScreen = ({ match, history }) => {
         setDescription(product.description);
         // specs
 
-        // setRange();
-        // setSpeed();
-        // setWeight();
-        // setMotorPower();
-        // setBattery();
-        // setYoutubeURL();
+        setRange(product.range);
+        setSpeed(product.speed);
+        setWeight(product.weight);
+        setMotorPower(product.motorPower);
+        setBattery(product.battery);
+        setYoutubeURL(product.youtubeURL);
       }
     }
   }, [dispatch, history, productId, product, successUpdate]);
