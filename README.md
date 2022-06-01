@@ -94,15 +94,15 @@ pass: 123456
 
 1. Navigate to the client folder, and in the root directory of the client folder, type the following:
    $ npm install
-1. Create an `.env` files for server.
-1. Create a mongoDB account and get the url
-1. Add mongoDB url in the env file
+1. Create a `.env` files for server
+1. Create a MongoDB account and get the URL
+1. Add MongoDB URL in the env file
 
 ```
 MONGO_URL=your-key-here
 ```
 
-5. Create a paypal account and get the id
+5. Create a PayPal account and get the id
 
 ```
 PAYPAL_CLIENT_ID=your-id-here
@@ -186,26 +186,26 @@ return (
 
 ## Features
 
-- Full stack web application utilizing the MERN stack: MongoDB, Express.js, React, and Node.js.
+- Full-stack web application utilizing the MERN stack: MongoDB, Express.js, React, and Node.js.
 - Authorization and authentication implemented with JWT and bcrypt.
 - Front-End styles and shop components built with CSS and Bootstrap.
-- Users can create account through application.
+- Users can create an account through the application.
 - Users can add profile information, payment information, shop, and checkout.
-- Add PEV device and update them as they get processed
-- Admin account can add and delete products, handle shipment, drop and edit user accounts.
+- Add PEV devices and update them as they get processed
+- Admin accounts can add and delete products, handle shipment, and drop and edit user accounts.
 
 ## Status
 
-Project is: finished with option to expand functionality and DRY out code.
+The project is: finished with the option to expand functionality and DRY out code.
 
 ## Inspiration
 
-The inspiration for EV-Wheels came as I was riding my e-bike. With the increase of PEV device currently available in the market. I decided to create a store to sell all my favorite device and allow users easily shop for PEV in one location.
+The inspiration for EV-Wheels came as I was riding my e-bike. With the increase of PEV devices currently available in the market. I decided to create a store to sell all my favorite devices and allow users easily shop for PEV in one location.
 
 ## Contact
 
 Created by [Van Vy](vanby.com)
-Feel free to contact me for any questions!
+Feel free to contact me with any questions!
 
 ## License
 
