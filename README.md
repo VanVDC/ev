@@ -1,6 +1,6 @@
 # EV-Wheels Store
 
-> Store that sell PEV device like EUC, E-bikes, and E-scooters
+> Store that sells PEV device like EUC, E-bikes, and E-scooters
 
 ## Table of contents
 
@@ -16,7 +16,7 @@
 
 ## General info
 
-EV-Wheels is a easy-to-use e-commerce store that allows shoppers to buy PEV device. It contains all the e-commerce essentials for adding products and use PayPal and personal credit card as payment systems.
+EV-Wheels is an easy-to-use e-commerce store that allows shoppers to buy PEV device. It contains all the e-commerce essentials for adding products and use PayPal and personal credit card as payment systems.
 
 <div align="center">EV-Wheels </div>
 <br/>
