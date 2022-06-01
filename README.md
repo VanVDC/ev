@@ -35,7 +35,7 @@ EV-Wheels is an easy-to-use e-commerce store that allows shoppers to buy PEV dev
 
 ## Project Demo
 
-[Click to view site](https://ev-wheels.herokuapp.com/)
+[Click to view the site](https://ev-wheels.herokuapp.com/)
 
 - Login
 
@@ -46,7 +46,7 @@ pass: 123456
 
 ## Project Video
 
-[Click to view demo of EV-Wheels](./frontend/src/assets/demo.gif)
+[Click to view the demo of EV-Wheels](./frontend/src/assets/demo.gif)
 
 ## Technologies
 
