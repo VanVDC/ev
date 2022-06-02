@@ -80,19 +80,19 @@ pass: 123456
 
 ## Setup: To try out this project:
 
-##### Client
+##### Frontend
 
 1. Clone the GitHub repository locally to your computer
 1. In the command line, navigate to the root directory of the repository, and type the following:
    $ npm install
-1. Navigate to the client folder, and in the root directory of the client folder, type the following:
+1. Navigate to the frontend folder, and in the root directory of the frontend folder, type the following:
    $ npm install
-1. In the client folder, and in the root directory of the client folder, type the following:
+1. In the frontend folder, and in the root directory of the frontend folder, type the following:
    $ npm start
 
-##### Server
+##### Backend
 
-1. Navigate to the server folder, and in the root directory of the server folder, type the following:
+1. Navigate to the backend folder, and in the root directory of the backend folder, type the following:
    $ npm install
 1. Create a `.env` files for server
 1. Create a MongoDB account and get the URL
