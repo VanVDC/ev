@@ -92,7 +92,7 @@ pass: 123456
 
 ##### Server
 
-1. Navigate to the client folder, and in the root directory of the client folder, type the following:
+1. Navigate to the server folder, and in the root directory of the server folder, type the following:
    $ npm install
 1. Create a `.env` files for server
 1. Create a MongoDB account and get the URL
