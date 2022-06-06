@@ -204,7 +204,7 @@ The inspiration for EV-Wheels came as I was riding my e-bike. With the increase 
 
 ## Contact
 
-Created by [Van Vy](vanby.com)
+Created by [Van Vy](vanbvy.com)
 Feel free to contact me with any questions!
 
 ## License
